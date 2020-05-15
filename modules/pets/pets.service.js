@@ -28,7 +28,6 @@ module.exports = {
       pets.cats.dequeue();
     }
     if (type === 'dog') {
-      console.log('dequeue dog');
       pets.dogs.dequeue();
     }
   },

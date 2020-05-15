@@ -19,13 +19,13 @@ router.get('/dogs', (req, res) => {
 router.delete('/api/cats', json, (req, res) => {
   // Remove a pet from adoption.
   Pets.dequeue('cat');
-  return res.status(201);
+  return res.status(201).end();
 });
 
 router.delete('/api/dogs', json, (req, res) => {
   // Remove a pet from adoption.
-  Pets.dequeue('dog');
-  return res.status(201);
+  const result = Pets.dequeue('dog');
+  res.status(201).end();
 });
 
 module.exports = router;
