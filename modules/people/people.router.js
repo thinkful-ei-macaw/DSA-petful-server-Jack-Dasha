@@ -19,6 +19,7 @@ router.post('/', json, (req, res) => {
 });
 
 router.delete('/', (req, res) => {
+  // Delete the person at the front of the queue
   People.dequeue();
   return res.status(201).end();
 });
