@@ -44,7 +44,7 @@ class Queue {
     if (this.first === null) return null;
     let current = this.first;
     let result = [current.value];
-    while (current !== null) {
+    while (current.next !== null) {
       current = current.next;
       result.push(current.value);
     }
