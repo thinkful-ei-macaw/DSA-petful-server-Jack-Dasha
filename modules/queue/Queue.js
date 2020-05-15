@@ -37,20 +37,20 @@ class Queue {
   }
 
   show() {
-    if(this.first !== null) return this.first.value;
+    if (this.first !== null) return this.first.value;
     return -1;
   }
 
   all() {
-   if(this.first === null) return null;
-   let current = this.first;
-   let result = [current.value];
-   while(current !== null) {
-     current = current.next;
-     result.push(current.value);
-   }
-   return result;
+    if (this.first === null) return null;
+    let current = this.first;
+    let result = [current.value];
+    while (current !== null) {
+      current = current.next;
+      result.push(current.value);
+    }
+    return result;
   }
 }
 
-module.exports = Queue
+module.exports = Queue;
