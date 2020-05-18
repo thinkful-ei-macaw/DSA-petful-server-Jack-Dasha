@@ -12,6 +12,10 @@ Dasha Akhten
 
 Jack Lansing
 
+# client repo : https://github.com/thinkful-ei-macaw/DSA-petful-client-Jack-Dasha
+
+# server repo: https://github.com/thinkful-ei-macaw/DSA-petful-server-Jack-Dasha
+
 ### Tech Stack
 
 - React
